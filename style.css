@@ -2,17 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#galeria {
-
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    padding: 10px;
-    border: 6px solid;
+    font-family: "Clarity City", sans-serif;
 }
 
 body {
+    background-color: #f9fafb;
+    color: #0c0d0d;
+}
+
+.header {
+    top: 0;
+    position: sticky;
+}
+
+.menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #43484e;
+    color: white;
+    padding: 2rem;
+}
+
+
+.menu-lista {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    color: #f9fafb;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.menu-lista a:hover {
+
+    color: #a175ae
+}
+
+.seccion-galeria {
+    padding: 2rem;
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeria img {
+
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.8s;
+}
+
+.galeria img:hover {
+
+    transform: scale(1.1);
 }
